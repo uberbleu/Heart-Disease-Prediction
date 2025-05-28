@@ -10,10 +10,10 @@ This project involves predicting the likelihood of heart disease in patients usi
 * The original data came from Cleaveland data from the UCI Machine Learning Repository: https://archive.ics.uci.edu/ml/datasets/heart+Disease 
 * There is also a version of it available on kaggle. https://www.kaggle.com/ronitf/heart-disease-uci
 
-3. Evaluation
+## 3. Evaluation
 * Can we reach 80% accuracy at predicting whether or not a patient has heart disease?
 
-6. Features
+## 4. Features
 * age
 * sex
 * chest pain type (4 values)
@@ -55,3 +55,20 @@ This project involves predicting the likelihood of heart disease in patients usi
 ## Statistical Significance:
 * Significant predictors of heart disease include age, sex, chest pain type, cholesterol levels, and maximum heart rate.
 * Features such as fasting blood sugar (fbs) and resting electrocardiographic results (restecg) were not statistically significant at the 0.05 level.
+
+## Conclusions
+* Chest pain (cp), resting blood pressure (trestbps), exercise-induced angina (exang), ST depression (oldpeak), and thalassemia (thal) are the most important statistically significant predictors of heart disease.
+* Sex, particularly being male, significantly reduces the odds of heart disease in this dataset.
+* Some variables, like age, cholesterol, and slope, while influential, are not statistically significant in predicting heart disease.
+* After finding the best parameters using the logistic regression model, we have not improved.
+* We could try XGBoost model in order to see if there is any improvement.
+## Retrospection
+### 1. Have we met our goal?
+* We successfully met our goal of achieving over 80% accuracy in predicting heart disease, exceeding it by 4% with an overall accuracy of 84%. 
+* This was accomplished by optimizing the logistic regression model through hyperparameter tuning, ensuring reliable classification of individuals with or without heart disease.
+### 2.What did we learn from our experience?
+* Through this analysis, we learned that a well-tuned logistic regression model can effectively predict heart disease, demonstrating the importance of hyperparameter optimization and addressing class imbalance. 
+* Additionally, key factors such as chest pain type, cholesterol levels, and maximum heart rate were found to significantly influence the likelihood of heart disease, offering valuable insights for future medical assessments.
+### What are some future improvements?
+* Future improvements could involve exploring more advanced models like Random Forest or XGBoost to enhance prediction accuracy. 
+* Additionally, incorporating more diverse datasets and feature engineering may help refine insights and better capture the nuances of heart disease prediction.
